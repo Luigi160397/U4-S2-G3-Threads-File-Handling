@@ -28,7 +28,7 @@ public class RegistroPresenze {
 		try {
 			if (file.exists()) {
 				String content = FileUtils.readFileToString(file, "UTF-8");
-				Main3.logger.info(content);
+				Main3.logger.info("\n" + content);
 			} else {
 
 				Main3.logger.info("File non trovato.");

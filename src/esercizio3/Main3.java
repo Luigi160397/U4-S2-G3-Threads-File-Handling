@@ -11,6 +11,7 @@ public class Main3 {
 		RegistroPresenze.aggiungiDipendente("Luca", 7);
 		RegistroPresenze.aggiungiDipendente("Giovanni", 1);
 
+		RegistroPresenze.stampaRegistro();
 	}
 
 }

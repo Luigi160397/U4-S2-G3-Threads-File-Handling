@@ -24,6 +24,21 @@ public class RegistroPresenze {
 		System.out.println("Hai aggiunto: " + nome + "=" + giorniPresenze);
 	}
 
+	public static void stampaRegistro() {
+		try {
+			if (file.exists()) {
+				String content = FileUtils.readFileToString(file, "UTF-8");
+				Main3.logger.info(content);
+			} else {
+				System.out.println("FILE NON TROVATO!");
+				Main3.logger.info("File non trovato.");
+			}
+
+		} catch (IOException e) {
+			Main3.logger.info(e.getMessage());
+		}
+	}
+
 	public String getNome() {
 		return Nome;
 	}

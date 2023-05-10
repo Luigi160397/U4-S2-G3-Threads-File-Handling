@@ -30,7 +30,7 @@ public class RegistroPresenze {
 				String content = FileUtils.readFileToString(file, "UTF-8");
 				Main3.logger.info(content);
 			} else {
-				System.out.println("FILE NON TROVATO!");
+
 				Main3.logger.info("File non trovato.");
 			}
 
